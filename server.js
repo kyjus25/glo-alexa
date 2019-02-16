@@ -1,4 +1,6 @@
 const Alexa = require('ask-sdk');
+const GloSDK = require('@axosoft/glo-sdk')
+
 let skill;
 
 const GetBoardsHandler = {
@@ -8,8 +10,11 @@ const GetBoardsHandler = {
   },
   handle(handlerInput) {
     const speechText = 'Get Boards!';
+    const authToken = handlerInput.requestEnvelope.context.System.user.accessToken;
 
-    console.log(handlerInput.requestEnvelope.context.System.user.accessToken);
+    GloSDK(authToken).boards.getAll().then(res => {
+      console.log(res);
+    });
 
     return handlerInput.responseBuilder
       .speak(speechText)

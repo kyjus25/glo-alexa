@@ -12,6 +12,7 @@
     "start": "node ./server.js"
   },
   "dependencies": {
+    "@axosoft/glo-sdk": "^1.0.7",
     "ask-sdk": "^2.3.0",
     "ask-sdk-core": "^2.3.0",
     "ask-sdk-model": "^1.11.2",
