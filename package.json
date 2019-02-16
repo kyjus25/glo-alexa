@@ -1,0 +1,21 @@
+{
+  "name": "glo-alexa",
+  "version": "1.0.0-SNAPSHOT",
+  "author": "Justin White <kyjus25@gmail.com>",
+  "repository": "https://github.com/kyjus25/glo-alexa",
+  "description": "Backend for Axosofts Glo Alexa Skill",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "ask-sdk": "^2.3.0",
+    "ask-sdk-core": "^2.3.0",
+    "ask-sdk-model": "^1.11.2",
+    "express": "^4.16.4",
+    "json-lint": "~0.1.0"
+  }
+}

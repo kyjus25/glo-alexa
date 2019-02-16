@@ -1,0 +1,27 @@
+# WebStorm
+.idea/
+
+# Netbeans
+nbproject/
+
+# Mac OS X
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# NPM
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Build-specific
+target/
+dist/
+release-builds
+
+#testing
+src/app/home/
+src/app/test/
+
+# Config
+src/config.json
